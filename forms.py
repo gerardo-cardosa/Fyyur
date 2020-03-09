@@ -6,6 +6,15 @@ from Enums import StatesEnums, GenreEnums
 
 generesSet = set(GenreEnums.choicesSingle())
 
+# References:
+# https://knowledge.udacity.com/questions/61746
+# https://wtforms.readthedocs.io/en/stable/validators.html
+# https://wtforms.readthedocs.io/en/stable/crash_course.html
+
+# Custom Validators:
+# https://stackoverflow.com/questions/50327174/custom-validators-in-wtforms-using-flask
+# https://knowledge.udacity.com/questions/61746
+
 class ShowForm(Form):
     artist_id = StringField(
         'artist_id'

@@ -1,3 +1,4 @@
+# Example from https://knowledge.udacity.com/questions/61746
 from enum import Enum
 
 class StatesEnums(Enum):

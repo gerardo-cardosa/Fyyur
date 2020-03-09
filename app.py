@@ -48,6 +48,8 @@ migrate = Migrate(app, db)
 #    db.Column('start_time', db.DateTime, nullable=False)
 #)
 
+# Reference for relationship https://docs.sqlalchemy.org/en/13/orm/basic_relationships.html
+
 ## Change to support Many to Many with extra fields
 ## In this case "start_time"
 class Show(db.Model):
@@ -69,7 +71,7 @@ class Venue(db.Model):
   state = db.Column(db.String(120))
   address = db.Column(db.String(120))
   phone = db.Column(db.String(120))
-  image_link = db.Column(db.String(500), default='https://www.ochch.org/wp-content/themes/mast/images/xempty-photo.jpg.pagespeed.ic.rb5Znw4o9F.jpg')
+  image_link = db.Column(db.String(500))
   facebook_link = db.Column(db.String(120))
   ## New fields
   genres = db.Column(db.String(120))
